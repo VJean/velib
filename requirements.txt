@@ -1,0 +1,5 @@
+matplotlib
+# cartopy 0.17.0 pas compatible avec proj>=6,
+# donc on target une version dans le futur, voir README.md
+git+https://github.com/SciTools/cartopy.git@23e31dd#egg=Cartopy
+cython
