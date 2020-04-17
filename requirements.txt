@@ -4,3 +4,4 @@ matplotlib
 git+https://github.com/SciTools/cartopy.git@23e31dd#egg=Cartopy
 cython
 scipy
+pandas
