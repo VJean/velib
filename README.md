@@ -16,12 +16,20 @@ Here's a trick to get around the minute-resolution of crontab ([credits](https:/
 * * * * * sleep 50 ; ~/velib/get-records.sh >> ~/velib/velib.log 2>&1
 ```
 
-## Python
+## Display in Grafana
+
+`datasource.py` was created to serve datapoints by acting as a datasource for Grafana. Note: this has not been tested since 2019.
+
+## Generate reports
+
+`velib.py` is a one-file-fits-all script that provides functions to generate static and animated charts based on the data available.
+This is in a draft state for now and could be greatly improved.
+
+## Python libraries
 
 Uses Cartopy, which depends on geos and proj. On archlinux: `sudo pacman -S geos proj`
 and also Cython (pip)
 
-Proj version error : see https://github.com/SciTools/cartopy/pull/1289#issuecomment-506025563
-target cartopy@23e31dd to get the compatibility with proj >= 6
-
-spécifier ça dans Pipfile : git+https://github.com/SciTools/cartopy.git@23e31dd#egg=Cartopy
+`Proj` version error: see https://github.com/SciTools/cartopy/pull/1289#issuecomment-506025563
+Let's target `cartopy@23e31dd` to get the compatibility with proj >= 6
+`Cartopy` requirements needs to be specified as: git+https://github.com/SciTools/cartopy.git@23e31dd#egg=Cartopy

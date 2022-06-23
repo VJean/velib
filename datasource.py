@@ -1,3 +1,7 @@
+"""
+This simple server acts a datasource for Grafana
+"""
+
 from flask import Flask, jsonify, request
 from dateutil import parser as date_parser
 from datetime import timedelta
