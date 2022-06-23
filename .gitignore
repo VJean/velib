@@ -3,3 +3,5 @@ records/
 check.md5
 last-velib.json
 venv/
+.idea/
+__pycache__/
